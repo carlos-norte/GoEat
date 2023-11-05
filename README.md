@@ -1,11 +1,11 @@
 # GoEat
 
 Para utilizar este projeto é necessário:
-1. instalar o composer e instalar a pasta vendor e para isso é necessário usar o seguinte comando no terminal
+1. instalar a pasta vendor e para isso é necessário usar o seguinte comando no terminal
    
         composer require nesbot/carbon
 
-2. note que foi criado um ficheiro composer.json, apague o conteudo e adicione
+2. note que foi criado um ficheiro composer.json, apague o conteúdo e adicione
 
         {
             "require": {
@@ -17,8 +17,12 @@ Para utilizar este projeto é necessário:
                 "classmap": ["src"]
             }
         }
+
+3. correr no terminal, para atualizar as classes no autoload
+
+         composer dump-autoload 
    
-3. criar um ficheiro .config na pasta src
+4. criar um ficheiro .config na pasta src
    
        HOSTNAME=localhost
        USERNAME=root //ou outro nome que tenha na base de dados
@@ -26,4 +30,9 @@ Para utilizar este projeto é necessário:
        DBNAME=GoEat
        DBPORT=3306
 
-4.
+5. criar um ficheiro .gitignore com o seguinte conteúdo
+
+         src/.config
+         vendor/
+
+
