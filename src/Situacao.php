@@ -7,15 +7,15 @@ class Situacao extends Model
     protected ?int $id;
     protected ?string $situacao;
 
-    public function __construct($situacao = ''){
+    public function __construct(string $situacao = ''){
 
         parent::__construct('situacoes', 'id');
 
         $this->id = null;
         $this->situacao = $situacao;
-       
     }
 
+    
     /**
      * Get the value of id
      */ 

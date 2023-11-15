@@ -14,6 +14,7 @@ class Tipo extends Model
         $this->id = null;
         $this->tipo = $tipo;
     }
+
     
     /**
      * Get the value of id

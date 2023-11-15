@@ -78,6 +78,7 @@ class Restaurante extends Entidade
         $this->numerario = $numerario;
     }
 
+    
     /**
      * Get the value of telefone
      */ 

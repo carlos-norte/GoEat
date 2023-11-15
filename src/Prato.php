@@ -14,8 +14,13 @@ class Prato extends Model
     protected ?int $restaurante;
     
     public function __construct(
-        string $nome  = '', string $descricao = '', float $preco = 0, string $imagem ='',
-        int $tipo = 0, int $disponivel = 0, int $restaurante = 0
+        string $nome  = '',
+        string $descricao = '',
+        float $preco = 0,
+        string $imagem = '',
+        int $tipo = 0,
+        int $disponivel = 0,
+        int $restaurante = 0
     )
     {
         parent::__construct('pratos', 'id');
@@ -28,8 +33,9 @@ class Prato extends Model
         $this->tipo = $tipo;
         $this->disponivel = $disponivel;
         $this->restaurante = $restaurante;
-
     }
+
+
     /**
      * Get the value of id
      */ 

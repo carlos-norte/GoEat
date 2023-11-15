@@ -27,6 +27,7 @@ class Utilizador extends Model
         $this->perfil = $perfil;
         $this->entidade = $entidade;
     }
+
     
     /**
      * Get the value of id
